@@ -1,0 +1,9 @@
+Select all the columns of a dataframe
+staging_method_types_df.columns
+
+example:
+   updateShipping = fact_order_ship_delivers_df .withColumnRenamed("shipping_type", "fosd_shipping_type")\
+            .join(staging_method_types_df,sequence("order_id") ,how='leftsemi') \
+            .withColumn("shipping_type_update" , when(col("shipping_type").isNotNull(),col("shipping_type")).otherwise(col("fosd_shipping_type"))) \
+            .drop("fosd_shipping_type", staging_method_types_df.columns)
+            
