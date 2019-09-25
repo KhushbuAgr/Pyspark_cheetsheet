@@ -13,3 +13,7 @@ https://stackoverflow.com/questions/37780748/how-to-select-all-columns-of-a-data
             
 Add venv in python project
 https://www.jetbrains.com/help/idea/creating-virtual-environment.html
+
+How to read JSON files from S3 using PySpark from local IDE
+https://medium.com/@bogdan.cojocar/how-to-read-json-files-from-s3-using-pyspark-and-the-jupyter-notebook-275dcb27e124
+
